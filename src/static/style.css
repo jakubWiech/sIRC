@@ -1,0 +1,60 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Calibri';
+}
+
+#main{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    background-color: #222222;
+}
+
+#chat{
+    width: 60%;
+    height: 70%;
+    overflow-y: scroll;
+    padding: 1px;
+    border: 1px solid #888888;
+    background-color: #FFFFFF;
+}
+
+#info{
+    width: 100px;
+    height: 30px;
+    background-color: #f4a261;
+    border-radius: 5px;
+    text-align: center;
+    line-height: 30px;
+    cursor: pointer;
+    margin: 5px
+}
+
+#sidepanel{
+    z-index: 2;
+    position: absolute;
+    top: 0;
+    left: -300px;
+    width: 290px;
+    height: 100vh;
+    padding-left: 10px;
+    background-color: #f4a261;
+    transition: 0.5s;
+}
+
+#message{
+    width: 60%;
+}
+
+.noselect {
+    -webkit-touch-callout: none;
+      -webkit-user-select: none;
+       -khtml-user-select: none;
+         -moz-user-select: none;
+          -ms-user-select: none;
+              user-select: none;
+  }
