@@ -4,6 +4,7 @@ const path = require('path')
 const session = require('express-session')
 const cookieParser = require('cookie-parser')
 const cors = require('cors')
+const port = process.env.PORT || 3000;
 
 var chat = []
 
@@ -98,6 +99,6 @@ app.post("/connectNewUser", function (req, res) {
     res.end()
 })
 
-app.listen(3000, () => {
+app.listen(port, () => {
     console.log("Bangla na 3000")
 })
